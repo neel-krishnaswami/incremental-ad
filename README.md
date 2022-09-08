@@ -22,7 +22,8 @@ events:
 
 2. If there is an event, we need to update the embedding
 
-Operations: 
+Operations:
+```
    type human = (name, place, newsfeed)
    type node = (id, embedding, human) 
    type edge = (node, node, event)
@@ -31,7 +32,7 @@ Operations:
    add-edge : graph × edge → graph 
    remove-node : graph × id → graph
    remove-edge : graph × edge → graph
-
+```
 a sample ML model: initial-embedding : name × place × newsfeed → embedding 
 
 
